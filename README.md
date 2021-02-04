@@ -44,5 +44,5 @@ The API then sends the tweet to the deep learning model built using TensorFlow 2
 
 ![image](https://user-images.githubusercontent.com/32692718/78304887-e6bdcb00-74fc-11ea-939d-19b6334edd5e.png)
 
-# KENNEDY KAMANDE WANGARI
+# KENNEDY KAMANDE WANGARI   :: SCT221-0147/2016
 

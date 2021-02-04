@@ -1,7 +1,18 @@
-# Disaster Watcher 
+# Disaster Watcher Crises Alert, and Monitoring System. 
 
-## Disaster Identification using Tweeter Data and Deep Learning
-This repository contains the code for automatically identifying and classifying the disaster related tweets. The model is implemented using a Deep learning approach. 
+This is a crisis mapping platform that collects data from twitter, extracts disaster-related information from tweets, and visualizes the results on a map. It enables users to quickly locate information in different geographic areas at a glance, and to determine physical constraints caused by the disaster, such as non-accessible bridges or roads, and take an informed action. Such information helps both public officials and disaster responders (e.g., humanitarian organizations, disaster relief agencies, or local actors) answer the following questions:
+
+When did the disaster happen?
+Where are the affected areas?
+What are the impacts of the disaster?
+
+The answers to these questions provide spatial (where), temporal (when), and thematic (what) information about an event. The insights gained from real-time information analysis is valuable to decision-makers throughout each phase of a disaster, from preparedness to response and recovery.
+
+
+## Disaster, and Crises Identification using Twitter Data and implementation of Deep Learning
+This repository contains the code for automatically identifying and classifying the disaster/ crises related tweets. 
+
+This project aims to convert tweets into a reliable source of information and, therefore, enable an effective use of social media messages in disaster response and recovery. It uses machine learning to identify disaster-related tweets, extract place names, and map the results. The following section presents the technical architecture and describes how the system works
 
 ## 1. Introduction
 Social media is increasingly being used to broadcast useful information during local crisis situations(e.g. hurricanes, earthquakes, explosions, bombings,etc).Identifying disaster related information in social media is challenging due to the low signal-to-noise ratio.In this work we will use NLP to address this challenge.
@@ -27,7 +38,7 @@ The data from the following crisis events were used in this analysis :
 The workflow starts with the data collection process. The backend API uses a keyword-based sampling approach to collect tweets using Twitter’s streaming API. In this context, a reference dictionary of disaster-related terms, developed by CrisisLex.org, was used as keywords. CrisisLex is a lexicon of 380 disaster-related terms that frequently appeared in relevant tweets during different types of disasters between October 2012 and July 2013 in the US, Canada, and Australia.
 
 The API then sends the tweet to the deep learning model built using TensorFlow 2.0 for Python and exposed as a Flask app. The model analyzes textual content of tweets to evaluate their relevance to floods, earthquakes, hurricanes, tornadoes, explosions, and bombings. The relevant tweets are then sent to the geoparser, which extracts place names from the text and geocodes them. Finally, the results are sent to the frontend for visualization.
-You can read the full description of the application along with the arcitectral diangram on [Google's Tensorflow blog.](https://blog.tensorflow.org/2019/09/disaster-watch-crisis-mapping-platform.html)
+
 
 
 ![image](https://user-images.githubusercontent.com/32692718/78304887-e6bdcb00-74fc-11ea-939d-19b6334edd5e.png)

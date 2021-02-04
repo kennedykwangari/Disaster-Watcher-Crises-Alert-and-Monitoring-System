@@ -9,7 +9,8 @@ What are the impacts of the disaster?
 The answers to these questions provide spatial (where), temporal (when), and thematic (what) information about an event. The insights gained from real-time information analysis is valuable to decision-makers throughout each phase of a disaster, from preparedness to response and recovery.
 
 
-## Disaster, and Crises Identification using Twitter Data and implementation of Deep Learning
+## Assessing the implementation of Deep Learning in Humanitarian Assistance and Disaster Recovery: A case study of Integrating Twitter for crises, and disaster relief
+
 This repository contains the code for automatically identifying and classifying the disaster/ crises related tweets. 
 
 This project aims to convert tweets into a reliable source of information and, therefore, enable an effective use of social media messages in disaster response and recovery. It uses machine learning to identify disaster-related tweets, extract place names, and map the results. The following section presents the technical architecture and describes how the system works
@@ -43,5 +44,5 @@ The API then sends the tweet to the deep learning model built using TensorFlow 2
 
 ![image](https://user-images.githubusercontent.com/32692718/78304887-e6bdcb00-74fc-11ea-939d-19b6334edd5e.png)
 
-
+# KENNEDY KAMANDE WANGARI
 
